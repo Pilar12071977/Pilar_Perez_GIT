@@ -1,4 +1,10 @@
 #PRÁCTICA DE GIT 
+
+A -  Los ejerccios resueltos
+B -  El diagrama pedido en el apartado de 25
+
+**A**
+
 1.	git clone https://github.com/Pilar12071977/Pilar_Perez_GIT.git
 2.	nano git-nuestro.md
 3.	git add git-nuestro.md     /// git commit
@@ -40,6 +46,30 @@ Automatic merge failed; fix conflicts and then commit the result.
 34.	git checkout htmlify
 35.	git checkout master
 36.	git push origin inicial // git push origin styled // git push origin htmlify // git push origin title. Para cada rama git log -g // git branch htmlify 6ac974a01687437b1f15ed434491f04a2643126a// git checkout htmlify//
+
+**B**
+## Gráfo 
+
+git log –graph
+|\  Merge: a40d94f 6ac974a
+| | Author: Pilar Perez <pilarperez7@hotmail.com>
+| | Date:   Sat Sep 14 22:27:18 2024 +0200
+| |
+| |     Resolvemos el conflicto y quedamos con contenido styled
+| |
+| * commit 6ac974a01687437b1f15ed434491f04a2643126a (htmlify)
+| | Author: Pilar Perez <pilarperez7@hotmail.com>
+| | Date:   Sat Sep 14 22:19:10 2024 +0200
+| |
+| |     Modificado el el fichero git-nuestro.md por tercera vez
+| |
+* | commit a40d94fd7b6c6b5c5666e09ead2af450117d6b2a (origin/styled, refs/original/HEAD)
+|/  Author: Pilar Perez <pilarperez7@hotmail.com>
+|   Date:   Fri Sep 13 20:38:33 2024 +0200
+|
+|       Primer cambio dentro del fichero git-nuestro
+|
+* commit 3a5c76dc4a50714d2b9a43b3473a8340091aa97f (origin/master)
 
 
 
