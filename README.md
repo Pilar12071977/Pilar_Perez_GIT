@@ -1,9 +1,53 @@
 #PRÁCTICA DE GIT 
 
 A -  Los ejerccios resueltos
+
 B -  El diagrama pedido en el apartado de 25
 
 **A**
+
+- ¿Qué comandos utilizaste en el paso 11? ¿Por qué?
+  En el paso 11 he utilizadó el comando "git reset --soft HEAD~1". Porque este comando se utiliza para deshacer el último commit manteniendo los cambios en el área de preparación . Se usa cuando quieres revertir un commit pero deseas mantener el trabajo realizado para corregirlo o modificarlo antes de volver a hacer commit.
+  
+- ¿Qué comando o comandos utilizaste en el paso 12? ¿Por qué?
+  En el paso 12 he utilizadó el comando "git merge master". Porque, este comando intenta fusionar la rama master en la rama actual. Se usa para integrar los cambios que se han hecho en master a la rama en la que estás trabajando, en este caso, styled. Esto es importante para mantener la rama actualizada con los últimos cambios realizados en master.
+
+- El merge del paso 13. ¿Causó algún conflicto? ¿Por qué?
+  El merge en el paso 12 causó un conflicto, porque cuando hay cambios en el mismo archivo en ambas ramas (git-nuestro.md) que no se pueden fusionar automáticamente. Git requiere que el conflicto sea resuelto manualmente.
+
+  
+- El merge del paso 19. ¿Causó algún conflicto? ¿Por qué?
+ No, el merge en el paso 19 no causó conflictos porque en este paso se resolvió el conflicto previamente encontrado al elegir el contenido de la rama styled para mantener. Se hizo un commit después de resolver el conflicto, por lo que no había más conflictos que resolver.
+  
+- El merge del paso 21. ¿Causó algún conflicto? ¿Por qué?
+  No hay conflicto, porque aqui creo una nueva rama llamada title y, posteriormente, se hacen cambios en git-nuestro.md. 
+  
+- ¿Qué comando o comandos utilizaste en el paso 25?
+  git log –graph
+    
+- El merge del paso 26. ¿Podría ser fast forward? ¿Por qué?
+  git merge --no-ff title. No podía ser un fast forward porque utilicé --no-ff, eso significa que siempre voy a crear un nuevo commit de fusión, sin importar si se podría haber hecho de otra manera.
+    
+- ¿Qué comando o comnados utilzaste en el paso 27?
+  git checkout -- git-nuestro.md. Este comando lo utilice para descartar los cambios en git-nuestro.md, restaurándolo al último estado confirmado (commit). No afecta a otros archivos, solo al que se especifica.
+  
+- ¿Qué comando o comnados utilzaste en el paso 28?
+  git branch -d title. Intenté usar git branch -d title para eliminar la rama title, pero me dio un error porque estaba en esa rama. No puedo eliminar una rama si estoy dentro de ella, así que tuve que cambiar a otra primero.
+  
+- ¿Qué comando o comnados utilzaste en el paso 29?
+  git checkout 209203f.En este paso, usé git checkout 209203f para cambiar a un commit específico, esto me permite ver cómo estaba todo en ese momento de la historia del proyecto
+  
+- ¿Qué comando o comnados utilzaste en el paso 30?
+  git checkout master // git branch -d htmlify // git branch -d styled // git branch -d title. Aquí, cambié a la rama master y traté de eliminar las ramas htmlify, styled y title. 
+
+- ¿Qué comando o comnados utilzaste en el paso 32?
+  git checkout 3a5c76d // git tag -a inicial -m "en el primer commit". Aquí, commit específico (3a5c76d) y etiqueto ese commit como inicial, añadiendo un mensaje descriptivo.
+  
+- ¿Qué comando o comnados utilzaste en el paso 33?
+  git tag -a styled -m "modificacion del paso 10". En este paso, usé git tag -a styled -m "modificacion del paso 10" para crear otra etiqueta llamada styled, así puedo recordar qué cambios hice en el paso 10.
+
+
+
 
 1.	git clone https://github.com/Pilar12071977/Pilar_Perez_GIT.git
 2.	nano git-nuestro.md
